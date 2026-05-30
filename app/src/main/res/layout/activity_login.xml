@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:gravity="center"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:text="PharmaStockPro"
+        android:textSize="28sp"
+        android:textColor="#00FF88"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etUser"
+        android:hint="Login: admin"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:hint="Mot de passe: admin123"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="CONNEXION"
+        android:backgroundTint="#00FF88"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Licence 7 jours"
+        android:textColor="#666"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
