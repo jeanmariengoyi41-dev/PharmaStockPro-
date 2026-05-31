@@ -1,19 +1,11 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0'
-    }
+plugins {
+    id 'com.android.application'
 }
-
-apply plugin: 'com.android.application'
 
 android {
     namespace 'com.pharmastockpro.app'
     compileSdk 34
-    
+
     defaultConfig {
         applicationId "com.pharmastockpro.app"
         minSdk 24
@@ -21,10 +13,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    
+
     buildTypes {
         release {
             minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
         }
     }
 }
@@ -32,4 +28,5 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
