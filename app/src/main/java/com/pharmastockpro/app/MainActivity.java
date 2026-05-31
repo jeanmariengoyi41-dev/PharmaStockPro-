@@ -1,4 +1,4 @@
-package com.pharmastock.app;
+package com.pharmastockpro.app;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
