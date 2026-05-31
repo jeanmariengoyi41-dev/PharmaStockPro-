@@ -1,4 +1,4 @@
-package com.pharmastock.app;
+package com.pharmastockpro.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,9 +13,8 @@ public class LoginActivity extends AppCompatActivity {
 
         Button btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         });
     }
-}
+                       }
