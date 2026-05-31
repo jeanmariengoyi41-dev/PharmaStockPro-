@@ -1,7 +1,6 @@
-package com.pharmastockpro.app;
+package com.pharmastock.app;
 
 import android.os.Bundle;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -9,8 +8,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        TextView text = findViewById(R.id.textView);
-        text.setText("Bienvenue dans PharmaStockPro\n\nAppuyez sur les boutons pour tester");
     }
 }
